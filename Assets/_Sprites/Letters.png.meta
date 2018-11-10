@@ -149,7 +149,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -158,7 +158,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67ef7a10bfb358649ade9a19fe13ab54
+      spriteID: 2d548b4fa08a2f44cbdbef509ceb5f73
       vertices: []
       indices: 
       edges: []
@@ -167,9 +167,9 @@ TextureImporter:
       name: Letters_1
       rect:
         serializedVersion: 2
-        x: 36
+        x: 32
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -178,7 +178,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7116ca73750356f4da418e223fbd940d
+      spriteID: 5fad9196ec3461c46b789d4072192829
       vertices: []
       indices: 
       edges: []
@@ -187,9 +187,9 @@ TextureImporter:
       name: Letters_2
       rect:
         serializedVersion: 2
-        x: 72
+        x: 64
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -198,7 +198,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5ff610852f536a4b922f257e2dd440f
+      spriteID: 8e9a61b7e25331e418dcd14ea0469bc2
       vertices: []
       indices: 
       edges: []
@@ -207,9 +207,9 @@ TextureImporter:
       name: Letters_3
       rect:
         serializedVersion: 2
-        x: 108
+        x: 96
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -218,7 +218,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f08f82432012d443850f071f80d1b51
+      spriteID: ac224fc5cab026a469a77a979fcf81ac
       vertices: []
       indices: 
       edges: []
@@ -227,9 +227,9 @@ TextureImporter:
       name: Letters_4
       rect:
         serializedVersion: 2
-        x: 144
+        x: 128
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -238,7 +238,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4b6df3878405104ea2ff220083ecfd0
+      spriteID: ccd7d78d6b3f2cd4c897f5649f6414ef
       vertices: []
       indices: 
       edges: []
@@ -247,9 +247,9 @@ TextureImporter:
       name: Letters_5
       rect:
         serializedVersion: 2
-        x: 180
+        x: 160
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -258,7 +258,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0639e7b5db429e74fb1ed4b1653fc1ad
+      spriteID: a0a201cf36736c0469e412545137636d
       vertices: []
       indices: 
       edges: []
@@ -267,9 +267,9 @@ TextureImporter:
       name: Letters_6
       rect:
         serializedVersion: 2
-        x: 216
+        x: 192
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -278,7 +278,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94e2b9dd1bde31640870cb0d64a2cc49
+      spriteID: c6a55b09ce0b1e341a31b88d9ec091a1
       vertices: []
       indices: 
       edges: []
@@ -287,9 +287,9 @@ TextureImporter:
       name: Letters_7
       rect:
         serializedVersion: 2
-        x: 252
+        x: 224
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -298,7 +298,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b812af72ce4563146a1e663b7f5f5ebe
+      spriteID: f172c7af5f87b0e4d8b378c84549bd71
       vertices: []
       indices: 
       edges: []
@@ -307,9 +307,9 @@ TextureImporter:
       name: Letters_8
       rect:
         serializedVersion: 2
-        x: 288
+        x: 256
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -318,7 +318,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc119db831a53a84eb8b633591d313b4
+      spriteID: 8a4cf258e34a8654593c54a68c2d5a4e
       vertices: []
       indices: 
       edges: []
@@ -327,9 +327,9 @@ TextureImporter:
       name: Letters_9
       rect:
         serializedVersion: 2
-        x: 324
+        x: 288
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -338,7 +338,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 505ed06ebf6e7fb438d43511480f95ec
+      spriteID: e7aaee772e236d84a8b5eb8b08a70044
       vertices: []
       indices: 
       edges: []
@@ -347,9 +347,9 @@ TextureImporter:
       name: Letters_10
       rect:
         serializedVersion: 2
-        x: 360
+        x: 320
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -358,7 +358,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 670b07abaacaa50479244ed8f6f96619
+      spriteID: c38e32b6f8251784b8547e2f741162da
       vertices: []
       indices: 
       edges: []
@@ -367,9 +367,9 @@ TextureImporter:
       name: Letters_11
       rect:
         serializedVersion: 2
-        x: 396
+        x: 352
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -378,7 +378,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13bacd0ff4002cd4599df25ddaa7c624
+      spriteID: c1bd889c41522a545825e867c6992b00
       vertices: []
       indices: 
       edges: []
@@ -387,9 +387,9 @@ TextureImporter:
       name: Letters_12
       rect:
         serializedVersion: 2
-        x: 432
+        x: 384
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -398,7 +398,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 901969da3aecbb64399f4c3753c6aa6d
+      spriteID: d2bce849803c3014793a8130c84d0d51
       vertices: []
       indices: 
       edges: []
@@ -407,9 +407,9 @@ TextureImporter:
       name: Letters_13
       rect:
         serializedVersion: 2
-        x: 468
+        x: 416
         y: 0
-        width: 36
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -418,7 +418,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b17bbde03d05a44b968cb67101c3d71
+      spriteID: ad777db6ce1170d4ebc0733ac1519055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letters_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2c88eb8705e48449f10e22fcd8c6e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letters_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bf41a9039da204f8ac43b0d41e6849
       vertices: []
       indices: 
       edges: []

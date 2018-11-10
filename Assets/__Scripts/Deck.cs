@@ -38,11 +38,16 @@ public class Deck : MonoBehaviour
         }
         // Initialize the Dictionary of SuitSprites with necessary Sprites
         dictSuits = new Dictionary<string, Sprite>() {
-{ "C", suitClub },
-{ "D", suitDiamond },
-{ "H", suitHeart },
-{ "S", suitSpade }
-};
+
+            { "C", suitClub },
+
+            { "D", suitDiamond },
+
+            { "H", suitHeart },
+
+            { "S", suitSpade }
+
+        };
         ReadDeck(deckXMLText);
         MakeCards();
     }
@@ -228,6 +233,7 @@ public class Deck : MonoBehaviour
                 // Add this deco GameObject to the List card.decoGOs
                 card.decoGOs.Add(tGO);
             }
+            //------------------------------------------------------------------------------------------------------------------------------------
             // Add Pips
             // For each of the pips in the definition
             foreach (Decorator pip in card.def.pips)
@@ -272,7 +278,7 @@ public class Deck : MonoBehaviour
                 tGO.transform.localPosition = Vector3.zero;
                 tGO.name = "face";
             }
-
+            //------------------------------------------------------------------------------------------------------------------------------------
             // Add Card Back
             // The Card_Back will be able to cover everything else on the Card
             tGO = Instantiate(prefabSprite) as GameObject;
@@ -289,6 +295,7 @@ public class Deck : MonoBehaviour
 
             // Add the card to the deck
             cards.Add(card);
+            //------------------------------------------------------------------------------------------------------------------------------------
         }
     }
     // Find the proper face card Sprite
@@ -306,4 +313,31 @@ public class Deck : MonoBehaviour
         // If nothing can be found, return null
         return (null);
     }
+
+    //------------------------------------------------------------------------------------------------------------------------------------
+    // Shuffle the Cards in Deck.cards
+    static public void Shuffle(ref List<Card> oCards)
+    { // 1
+      // Create a temporary List to hold the new shuffle order
+        List<Card> tCards = new List<Card>();
+        int ndx; // This will hold the index of the card to be moved
+        tCards = new List<Card>(); // Initialize the temporary List
+                                   // Repeat as long as there are cards in the original List
+        while (oCards.Count > 0)
+        {
+            // Pick the index of a random card
+            ndx = Random.Range(0, oCards.Count);
+            // Add that card to the temporary List
+            tCards.Add(oCards[ndx]);
+            // And remove that card from the original List
+            oCards.RemoveAt(ndx);
+        }
+        // Replace the original List with the temporary List
+        oCards = tCards;
+        // Because oCards is a reference variable, the original that was
+        // passed in is changed as well.
+    }
+    //------------------------------------------------------------------------------------------------------------------------------------
+
+
 }
