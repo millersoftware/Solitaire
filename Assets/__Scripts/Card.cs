@@ -1,18 +1,19 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Card : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public string suit; // Suit of the Card (C,D,H, or S)
+    public int rank; // Rank of the Card (1-14)
+    public Color color = Color.black; // Color to tint pips
+    public string colS = "Black"; // or "Red". Name of the Color
+                                  // This List holds all of the Decorator GameObjects
+    public List<GameObject> decoGOs = new List<GameObject>();
+    // This List holds all of the Pip GameObjects
+    public List<GameObject> pipGOs = new List<GameObject>();
+    public GameObject back; // The GameObject of the back of the card
+    public CardDefinition def; // Parsed from DeckXML.xml
 }
 
 [System.Serializable]
