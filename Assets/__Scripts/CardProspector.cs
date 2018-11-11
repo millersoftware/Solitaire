@@ -11,7 +11,8 @@ public enum CardState
     tableau,
     target,
     discard
-}
+}
+
 public class CardProspector : Card
 { // Make sure CardProspector extends Card
   // This is how you use the enum CardState
@@ -30,5 +31,7 @@ public class CardProspector : Card
         Prospector.S.CardClicked(this);
         // Also call the base class (Card.cs) version of this method
         base.OnMouseUpAsButton();
-    }
-}
+    }
+
+}
+
