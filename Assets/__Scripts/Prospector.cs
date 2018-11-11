@@ -46,7 +46,9 @@ public class Prospector : MonoBehaviour
     public int chain = 0; // of cards in this run
     public int scoreRun = 0;
     public int score = 0;
-    public FloatingScore fsRun;    public Text GTGameOver;
+    public FloatingScore fsRun;
+
+    public Text GTGameOver;
     public Text GTRoundResult;
 
     //------------------------------------------------------------------------------------------------------------------------------------
@@ -87,7 +89,8 @@ public class Prospector : MonoBehaviour
     {
         GTGameOver.gameObject.SetActive(show);
         GTRoundResult.gameObject.SetActive(show);
-    }
+    }
+
     //------------------------------------------------------------------------------------------------------------------------------------
     void Start()
     {
@@ -346,8 +349,9 @@ public class Prospector : MonoBehaviour
     void ReloadLevel()
     {
         // Reload the scene, resetting the game
-        Application.LoadLevel("__Prospector_Scene_0");
-    }
+        SceneManager.LoadScene(0);
+    }
+
 
     //------------------------------------------------------------------------------------------------------------------------------------
     // ScoreManager handles all of the scoring
@@ -376,7 +380,8 @@ public class Prospector : MonoBehaviour
                     // Also adjust the fontSize
                     fsRun.fontSizes = new List<float>(new float[] { 28, 36, 4 });
                     fsRun = null; // Clear fsRun so it's created again
-                }
+                }
+
                 break;
             case ScoreEvent.mine: // Remove a mine card
                 chain++; // increase the score chain
@@ -401,7 +406,8 @@ public class Prospector : MonoBehaviour
                 else
                 {
                     fs.reportFinishTo = fsRun.gameObject;
-                }
+                }
+
                 break;
         }
         // This second switch statement handles round wins and losses

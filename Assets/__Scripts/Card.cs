@@ -22,11 +22,13 @@ public class Card : MonoBehaviour
     virtual public void OnMouseUpAsButton()
     {
         print(name); // When clicked, this outputs the card name
-    }
+    }
+
     void Start()
     {
         SetSortOrder(0); // Ensures that the card starts properly depth sorted
-    }
+    }
+
     public bool faceUp
     {
         get
@@ -90,7 +92,8 @@ public class Card : MonoBehaviour
         }
 
     }
-
+
+
 }
 
 [System.Serializable]

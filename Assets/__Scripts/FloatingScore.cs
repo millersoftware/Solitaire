@@ -113,8 +113,8 @@ public class FloatingScore : MonoBehaviour
                 // If fontSizes has values in it
                 // ...then adjust the fontSize of this GUIText
                 int size = Mathf.RoundToInt(Utils.Bezier(uC, fontSizes));
-                GetComponent<GUIText>().fontSize = size;
+                this.GetComponent<Text>().fontSize = size;
             }
         }
     }
-}
+}

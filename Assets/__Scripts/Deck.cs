@@ -18,6 +18,7 @@ public class Deck : MonoBehaviour
     // Prefabs
     public GameObject prefabSprite;
     public GameObject prefabCard;
+    public GameObject prefabCardGold;
     public bool ________________;
     public PT_XMLReader xmlr;
     public List<string> cardNames;
@@ -170,8 +171,19 @@ public class Deck : MonoBehaviour
         // Iterate through all of the card names that were just made
         for (int i = 0; i < cardNames.Count; i++)
         {
+            // MY CODE
             // Create a new Card GameObject
-            GameObject cgo = Instantiate(prefabCard) as GameObject;
+            int ran = Random.Range(0, 100); //Generates random #
+            GameObject cgo;
+            if (ran < 10) //Gold Card 10% chance
+            {
+               cgo = Instantiate(prefabCardGold) as GameObject;
+            }
+            else
+            {
+               cgo = Instantiate(prefabCard) as GameObject;
+            }
+
             // Set the transform.parent of the new card to the anchor.
             cgo.transform.parent = deckAnchor;
             Card card = cgo.GetComponent<Card>(); // Get the Card Component
@@ -283,7 +295,18 @@ public class Deck : MonoBehaviour
             // The Card_Back will be able to cover everything else on the Card
             tGO = Instantiate(prefabSprite) as GameObject;
             tSR = tGO.GetComponent<SpriteRenderer>();
-            tSR.sprite = cardBack;
+
+            //MY CODE
+            if (ran < 10) //Gold Card 10% chance
+            {
+                tSR.sprite = cardBackGold;
+            }
+            else
+            {
+                tSR.sprite = cardBack;
+            }
+
+
             tGO.transform.parent = card.transform;
             tGO.transform.localPosition = Vector3.zero;
             // This is a higher sortingOrder than anything else
