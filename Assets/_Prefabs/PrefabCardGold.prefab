@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114823989267597268}
   m_Layer: 0
   m_Name: PrefabCardGold
-  m_TagString: Untagged
+  m_TagString: Gold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

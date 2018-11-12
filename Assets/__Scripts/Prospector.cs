@@ -245,7 +245,7 @@ public class Prospector : MonoBehaviour
 
             // CardProspectors in the tableau have the state CardState.tableau
 
-            cp.state = CardState.tableau;
+            cp.state = eCardState.tableau;
             cp.SetSortingLayerName(tSD.layerName); // Set the sorting layers
 
 
@@ -325,7 +325,7 @@ public class Prospector : MonoBehaviour
 
                 // If either of the covering cards are in the tableau
 
-                if (cover.state == CardState.tableau)
+                if (cover.state == eCardState.tableau)
                 {
 
                     faceUp = false; // then this card is face-down
@@ -347,7 +347,7 @@ public class Prospector : MonoBehaviour
 
         // Set the state of the card to discard
 
-        cd.state = CardState.discard;
+        cd.state = eCardState.discard;
 
         discardPile.Add(cd); // Add it to the discardPile List<>
 
@@ -390,7 +390,7 @@ public class Prospector : MonoBehaviour
 
         target = cd; // cd is the new target
 
-        cd.state = CardState.target;
+        cd.state = eCardState.target;
 
         cd.transform.parent = layoutAnchor;
 
@@ -457,7 +457,7 @@ public class Prospector : MonoBehaviour
 
             cd.faceUp = false; // Make them all face-down
 
-            cd.state = CardState.drawpile;
+            cd.state = eCardState.drawpile;
 
             // Set depth sorting
 
@@ -478,7 +478,7 @@ public class Prospector : MonoBehaviour
         switch (cd.state)
         {
 
-            case CardState.target:
+            case eCardState.target:
 
                 // Clicking the target card does nothing
                 
@@ -487,7 +487,7 @@ public class Prospector : MonoBehaviour
 
 
 
-            case CardState.drawpile:
+            case eCardState.drawpile:
 
                 // Clicking any card in the drawPile will draw the next card
 
@@ -508,7 +508,7 @@ public class Prospector : MonoBehaviour
 
 
 
-            case CardState.tableau:
+            case eCardState.tableau:
 
                 // Clicking a card in the tableau will check if it's a valid play
 
@@ -537,6 +537,11 @@ public class Prospector : MonoBehaviour
 
 
                 // If we got here, then: Yay! It's a valid card.
+                if(cd.tag == "Gold")
+                {
+                    ScoreManager.EVENT(eScoreEvent.mine);
+                    FloatingScoreHandler(eScoreEvent.mine);
+                }
 
                 tableau.Remove(cd); // Remove it from the tableau List
 
